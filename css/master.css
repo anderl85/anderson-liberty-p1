@@ -1,0 +1,79 @@
+html{
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+body{
+    padding: .5em;
+}
+p{
+    padding: 0 1em;
+}
+#pkmnPic{
+    float: left;
+    width: 25%;
+    margin: 1em;
+}
+ul{
+    clear: both;
+    list-style: none;
+    line-height: 2em;
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+.innerList li{
+    display: inline-block;
+    width: 25%;
+    min-width: 95px;
+    max-width: 250px;
+    line-height: 3em;
+    text-align: center;
+}
+#clearPkmn{
+    position: absolute;
+    top: 2px;
+    right: 8%;
+    background-color: hsla(300, 42%, 43%, 1);
+    color: white;
+    width: 75px;
+    line-height: 2em;
+}
+.grass {
+    background-color: hsla(100, 52%, 55%, 1);
+    color: black;
+}
+.fire {
+    background-color: hsla(25, 86%, 56%, 1);
+    color: black;
+}
+.water {
+    background-color: hsla(222, 82%, 67%, 1);
+    color: black;
+}
+.typeHead {
+    font-weight: bold;
+}
+table{
+    margin: auto;
+}
+td, th {
+    line-height: 1.5em;
+    padding: .2em .5em;
+    border: 1px;
+    border-style: solid;
+
+}
+td{
+    text-align: center;
+}
+footer{
+    font-size: smaller;
+    border-top: 1px;
+    padding: .5em 2em;
+    background-color: hsla(300, 42%, 60%, 0.9);
+}
+footer a {
+    color: hsla(120, 42%, 30%, 1);
+}
+footer a:hover{
+    color: hsla(0, 42%, 30%, 1);
+}

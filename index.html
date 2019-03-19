@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>Starter Pokémon</title>
+        <link rel="shortcut icon" href="images/flavicon.ico" />
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+        <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="css/master.css">
+        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+        <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32" />
+        <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+    </head>
+    <body>
+        
+        <header>
+            <h1>Starter Pokémon</h1>
+        </header>
+        <!-- table, external font-->
+        <main>
+            <img id="pkmnPic" src="" alt="">
+            <br>
+            <h3 id="name">Select a Pokémon below to view</h3>
+            <p id="type"></p>
+            <p id="desc"></p>
+            <ul>
+                <li>Kanto Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(1)"><li class="grass">Bulbasaur</li></a>
+                        <a href="#" onclick = "displayPokemon(4)"><li class="fire">Charmander</li></a>
+                        <a href="#" onclick = "displayPokemon(7)"><li class="water">Squirtle</li></a>
+                    </ul>
+                </li>
+                <li>Johto Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(152)"> <li class="grass">Chikorita</li></a>
+                        <a href="#" onclick = "displayPokemon(155)"><li class="fire">Cyndaquil</li></a>
+                        <a href="#" onclick = "displayPokemon(158)"><li class="water">Totodile</li></a>
+                    </ul>
+                </li>
+                <li>Hoenn Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(252)"><li class="grass">Treecko</li></a>
+                        <a href="#" onclick = "displayPokemon(255)"><li class="fire">Torchic</li></a>
+                        <a href="#" onclick = "displayPokemon(258)"><li class="water">Mudkip</li></a>
+                    </ul>
+                </li>
+                <li>Sinnoh Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(387)"><li class="grass">Turtwig</li></a>
+                        <a href="#" onclick = "displayPokemon(390)"><li class="fire">Chimchar</li></a>
+                        <a href="#" onclick = "displayPokemon(393)"><li class="water">Piplup</li></a>
+                    </ul>
+                </li>
+                <li>Unova Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(495)"><li class="grass">Snivy</li></a>
+                        <a href="#" onclick = "displayPokemon(498)"><li class="fire">Tepig</li></a>
+                        <a href="#" onclick = "displayPokemon(501)"><li class="water">Oshawott</li></a>
+                    </ul>
+                </li>
+                <li>Kalos Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(650)"><li class="grass">Chespin</li></a>
+                        <a href="#" onclick = "displayPokemon(653)"><li class="fire">Fennekin</li></a>
+                        <a href="#" onclick = "displayPokemon(656)"><li class="water">Froakie</li></a>
+                    </ul>
+                </li>
+                <li>Alola Region Starters:
+                    <ul class="innerList">
+                        <a href="#" onclick = "displayPokemon(722)"><li class="grass">Rowlet</li></a>
+                        <a href="#" onclick = "displayPokemon(725)"> <li class="fire">Litten</li></a>
+                        <a href="#" onclick = "displayPokemon(728)"><li class="water">Popplio</li></a>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <a href="#" onclick = "displayPokemon(0)"><li id="clearPkmn">Clear</li></a>
+            </ul>
+            <br>
+            <p>Starter pokémon come in three types, grass, fire, and water. Each of these types are more or less effective in battle against other types. Below are the types that are more or less effective against starter types.</p>
+            <table>
+                <caption>Offensive Type Effectiveness</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Super Effective Against | 2X Attack</th>
+                        <th>Not Very Effective Against | 0.5X Attack</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="typeHead">Grass</td>
+                        <td>Ground, Rock, Water</td>
+                        <td>Flying, Poison, Bug, Steel, Fire, Grass, Dragon</td>
+                    </tr>
+                    <tr>
+                        <td class="typeHead">Fire</td>
+                        <td>Bug, Steel, Grass</td>
+                        <td>Rock, Fire, Water, Dragon</td>
+                    </tr>
+                    <tr>
+                        <td class="typeHead">Water</td>
+                        <td>Ground, Rock, Fire</td>
+                        <td>Water, Grass, Dragon</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <table>
+                <caption>Defensive Type Effectiveness</caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Strong Against | 0.5X Damage</th>
+                        <th>Weak Against | 2X Damage</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="typeHead">Grass</td>
+                        <td>Ground, Water, Grass, Electric</td>
+                        <td>Flying, Poison, Bug, Fire</td>
+                    </tr>
+                    <tr>
+                        <td class="typeHead">Fire</td>
+                        <td>Bug, Steel, Fire, Grass, Ice, Fairy</td>
+                        <td>Ground, Rock, Water</td>
+                    </tr>
+                    <tr>
+                        <td class="typeHead">Water</td>
+                        <td>Steel, Fire, Water, Ice</td>
+                        <td>Grass, Electric</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+        </main>
+        <footer>
+            <p>All images from <a href="https://bulbapedia.bulbagarden.net/wiki/Main_Page" target="_blank">Bulbapedia</a></p>
+            <p>Pokémon &copy; <a href="https://www.nintendo.com/" target="_blank">Nintendo</a> / <a href="https://www.creatures.co.jp/" target="_blank">Creatures Inc.</a> / <a href="http://www.gamefreak.co.jp/" target="_blank">GAME FREAK inc.</a></p>
+        </footer>
+        <script src="js/setdisplay.js"></script>
+    </body>
+</html>
